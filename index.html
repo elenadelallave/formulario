@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <h1>Formulario de Trabajo</h1>
+  <form action="registrardatos.php" method="post">
+    Ingrese su nombre:
+    <input type="text" name="nombre" size="20">
+    <br>
+    <input type="submit" value="enviar">
+  </form>
+  <form action="registrardatos.php" method="post">
+
+    Ingrese su clave:
+    <input type="password" name="clave" size="12">
+    <br>
+    <input type="submit" value="enviar">
+    <input type="reset" value="borrar">
+  </form>
+
+  <input type="text" name="nombre" size="30"><br>
+  Seleccione su pais:
+  <select name="pais">
+    <option value="1">Argentina</option>
+    <option value="2">España</option>
+    <option value="3">México</option>
+    <option value="4">Guatemala</option>
+    <option value="5">Honduras</option>
+    <option value="7">El Salvador</option>
+    <option value="8">Venezuela</option>
+    <option value="9">Colombia</option>
+    <option value="10">Cuba</option>
+    <option value="11">Bolivia</option>
+    <option value="13">Perú</option>
+    <option value="14">Ecuador</option>
+    <option value="15">Paraguay</option>
+    <option value="16">Uruguay</option>
+    <option value="17">Chile</option>
+  </select>
+  <br>
+  <input type="submit" value="Enviar">
+  </form>
+
+  <form action="registrardatos.php" method="post">
+    Ingrese su nombre:
+    <input type="text" name="nombre" size="30"><br>
+    Seleccione los lenguajes que conoce:
+    <br>
+    <input type="checkbox" name="java">Java<br>
+    <input type="checkbox" name="cmasmas">C++<br>
+    <input type="checkbox" name="c">C<br>
+    <input type="checkbox" name="csharp">C#<br>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+
+</html>
