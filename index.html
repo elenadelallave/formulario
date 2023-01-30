@@ -23,9 +23,7 @@
     <br>
     <input type="submit" value="enviar">
     <input type="reset" value="borrar">
-  </form>
 
-  <input type="text" name="nombre" size="30"><br>
   Seleccione su pais:
   <select name="pais">
     <option value="1">Argentina</option>
@@ -46,19 +44,33 @@
   </select>
   <br>
   <input type="submit" value="Enviar">
-  </form>
 
-  <form action="registrardatos.php" method="post">
-    Ingrese su nombre:
-    <input type="text" name="nombre" size="30"><br>
-    Seleccione los lenguajes que conoce:
-    <br>
-    <input type="checkbox" name="java">Java<br>
-    <input type="checkbox" name="cmasmas">C++<br>
-    <input type="checkbox" name="c">C<br>
-    <input type="checkbox" name="csharp">C#<br>
-    <input type="submit" value="Enviar">
-  </form>
+  Seleccione los lenguajes que conoce:
+  <br>
+  <input type="checkbox" name="java">Java<br>
+  <input type="checkbox" name="cmasmas">C++<br>
+  <input type="checkbox" name="c">C<br>
+  <input type="checkbox" name="csharp">C#<br>
+  <input type="submit" value="Enviar">
+
+  Seleccione el máximo nivel de estudios que tiene:
+  <br>
+  <input type="radio" name="estudios" value="1">Sin estudios<br>
+  <input type="radio" name="estudios" value="2">Primario<br>
+  <input type="radio" name="estudios" value="3">Secundario<br>
+  <input type="radio" name="estudios" value="4">Universitario<br>
+  <input type="submit" value="Enviar">
+
+  Seleccione una o varias secciones en las que le gustaría trabajar en nuestra empresa (Presione Ctrl para seleccionar varias opciones)<br>
+  <select name="puestos[]" size="4" multiple>
+    <option value="1">Director Ejecutivo</option>
+    <option value="2">Responsable Operativo</option>
+    <option value="3">Director Comercial</option>
+    <option value="4">Director de Marketing</option>
+    <option value="5">Director de Recursos Humanos</option>
+    <option value="6">Responsable Financiero</option>
+  </select>
+
 </body>
 
 </html>
