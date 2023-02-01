@@ -5,24 +5,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
   <title>Formulario</title>
 </head>
 
 <body>
   <h1>Formulario de Trabajo</h1>
   <form action="registrardatos.php" method="post">
-    Ingrese su nombre:
-    <input type="text" name="nombre" size="20">
-    <br>
-    <input type="submit" value="enviar">
+    <fieldset>
+      <legend>Datos personales</legend>
+      Apellido y nombre:
+      <input type="text" name="nombre" size="30"><br>
+      Ingrese su clave:
+      <input type="password" name="clave" maxlength="12" size="12">
+      <br>
+      <input type="submit" value="enviar">
+      Documento de identidad:
+      <input type="text" name="dni" size="8"><br>
+      Fecha de nacimiento:
+      <input type="text" name="fechanacimiento" size="12"><br>
+      Telefono:
+      <input type="text" value="453-" name="telefono" size="15"><br>
+      <textarea name="comentarios" rows="5" cols="40">Ingrese aqui sus comentarios</textarea><br>
+      <input type="submit" value="Enviar">
+      Dirección:
+      <input type="text" name="direccionpersona" size="30"><br>
+      Seleccione su estado civil:
+      <select name="articulo">
+        <optgroup label="estado civil">
+          <option value="1">Casado</option>
+          <option value="2">Divorciado</option>
+          <option value="3">Soltero</option>
+          <option value="4">Viudo</option>
+          <option value="5">Pareja</option>
+        </optgroup>
+      </select>
+      <br>
+      <input type="submit" value="Enviar">
+    </fieldset>
+    <fieldset>
+      <legend>Datos Laborales</legend>
+      Nombre de la empresa:
+      <input type="text" name="nombreempresa" size="30"><br>
+      Actividad:
+      <input type="text" name="actividad" size="50"><br>
+      Dirección:
+      <input type="text" name="direccionempresa" size="30"><br>
+    </fieldset>
+    <input type="submit" value="Enviar">
   </form>
-  <form action="registrardatos.php" method="post">
-
-    Ingrese su clave:
-    <input type="password" name="clave" size="12">
+  <form action="registrardatos.php" method="post" enctype="multipart/form-data">
+    Seleccione una foto para su curriculum:
+    <input type="file" name="foto">
     <br>
-    <input type="submit" value="enviar">
-    <input type="reset" value="borrar">
+    <input type="submit" value="Enviar">
+  </form>
 
   Seleccione su pais:
   <select name="pais">
@@ -63,7 +100,8 @@
   <input type="radio" name="estudios" value="4">Universitario<br>
   <input type="submit" value="Enviar">
 
-  Seleccione una o varias secciones en las que le gustaría trabajar en nuestra empresa (Presione Ctrl para seleccionar varias opciones)<br>
+  Seleccione una o varias secciones en las que le gustaría trabajar en nuestra empresa (Presione Ctrl para seleccionar
+  varias opciones)<br>
   <select name="puestos[]" size="4" multiple>
     <option value="1">Director Ejecutivo</option>
     <option value="2">Responsable Operativo</option>
@@ -73,7 +111,23 @@
     <option value="6">Responsable Financiero</option>
   </select>
 
-
+  <form action="registrardatos.php" method="post">
+    <fieldset>
+      <legend>Escriba aquí su experiencia laboral.</legend>
+      <label for="comentarios">Experiencia Laboral:</label><br>
+      <textarea name="comentarios" rows="5" cols="60" id="comentarios"></textarea>
+      <br>
+      <input type="submit" value="Enviar">
+    </fieldset>
+    <form action="registrardatos.php" method="post">
+      <fieldset>
+        <legend>Escriba aquí su experiencia laboral de cara al público</legend>
+        <label for="comentarios">Experiencia Laboral:</label><br>
+        <textarea name="comentarios" rows="5" cols="60" id="comentarios"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+      </fieldset>
+    </form>
 </body>
 
 </html>
