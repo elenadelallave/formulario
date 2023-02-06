@@ -12,37 +12,44 @@
 <body>
   <h1>Formulario de Trabajo</h1>
   <form action="registrardatos.php" method="post">
-    <fieldset>
-      <legend>Datos personales</legend>
-      Apellido y nombre:
-      <input type="text" name="nombre" size="30"><br>
-      Ingrese su clave:
-      <input type="password" name="clave" maxlength="12" size="12">
-      <br>
-      <input type="submit" value="enviar">
-      Documento de identidad:
-      <input type="text" name="dni" size="8"><br>
-      Fecha de nacimiento:
-      <input type="text" name="fechanacimiento" size="12"><br>
-      Telefono:
-      <input type="text" value="453-" name="telefono" size="15"><br>
-      <textarea name="comentarios" rows="5" cols="40">Ingrese aqui sus comentarios</textarea><br>
-      <input type="submit" value="Enviar">
-      Dirección:
-      <input type="text" name="direccionpersona" size="30"><br>
-      Seleccione su estado civil:
-      <select name="articulo">
-        <optgroup label="estado civil">
-          <option value="1">Casado</option>
-          <option value="2">Divorciado</option>
-          <option value="3">Soltero</option>
-          <option value="4">Viudo</option>
-          <option value="5">Pareja</option>
-        </optgroup>
-      </select>
-      <br>
-      <input type="submit" value="Enviar">
+    <br>
+    <br>
+    <legend>Datos personales</legend>
+    Apellido y nombre:
+    <input type="text" name="nombre" size="30">
+    <br>
+    <br>
+    Ingrese su clave:
+    <input type="password" name="clave" maxlength="12" size="12">
+    <br>
+    <br>
+    <input type="submit" value="enviar">
+    Documento de identidad:
+    <input type="text" name="dni" size="8"><br>
+    Fecha de nacimiento:
+    <input type="text" name="fechanacimiento" size="12"><br>
+    Telefono:
+    <input type="text" value="453-" name="telefono" size="15"><br>
+    <textarea name="comentarios" rows="5" cols="40">Ingrese aqui sus comentarios</textarea><br>
+    <input type="submit" value="Enviar">
+    Dirección:
+    <input type="text" name="direccionpersona" size="30">
+    <br>
+    <br>
+    Seleccione su estado civil:
+    <select name="articulo">
+      <optgroup label="estado civil">
+        <option value="1">Casado</option>
+        <option value="2">Divorciado</option>
+        <option value="3">Soltero</option>
+        <option value="4">Viudo</option>
+        <option value="5">Pareja</option>
+      </optgroup>
+    </select>
+    <input type="submit" value="Enviar">
     </fieldset>
+    <br>
+    <br>
     <fieldset>
       <legend>Datos Laborales</legend>
       Nombre de la empresa:
@@ -55,12 +62,15 @@
     <input type="submit" value="Enviar">
   </form>
   <form action="registrardatos.php" method="post" enctype="multipart/form-data">
+    <br>
+    <br>
     Seleccione una foto para su curriculum:
     <input type="file" name="foto">
     <br>
     <input type="submit" value="Enviar">
   </form>
-
+  <br>
+  <br>
   Seleccione su pais:
   <select name="pais">
     <option value="1">Argentina</option>
@@ -80,9 +90,9 @@
     <option value="16">Uruguay</option>
     <option value="17">Chile</option>
   </select>
-  <br>
   <input type="submit" value="Enviar">
-
+  <br>
+  <br>
   Seleccione los lenguajes que conoce:
   <br>
   <input type="checkbox" name="español">Español<br>
@@ -91,7 +101,8 @@
   <input type="checkbox" name="alemán">Alemán<br>
   <input type="checkbox" name="otro">Otro<br>
   <input type="submit" value="Enviar">
-
+  <br>
+  <br>
   Seleccione el máximo nivel de estudios que tiene:
   <br>
   <input type="radio" name="estudios" value="1">Sin estudios<br>
@@ -99,7 +110,8 @@
   <input type="radio" name="estudios" value="3">Secundario<br>
   <input type="radio" name="estudios" value="4">Universitario<br>
   <input type="submit" value="Enviar">
-
+  <br>
+  <br>
   Seleccione una o varias secciones en las que le gustaría trabajar en nuestra empresa (Presione Ctrl para seleccionar
   varias opciones)<br>
   <select name="puestos[]" size="4" multiple>
@@ -110,8 +122,9 @@
     <option value="5">Director de Recursos Humanos</option>
     <option value="6">Responsable Financiero</option>
   </select>
-
   <form action="registrardatos.php" method="post">
+    <br>
+    <br>
     <fieldset>
       <legend>Escriba aquí su experiencia laboral.</legend>
       <label for="comentarios">Experiencia Laboral:</label><br>
@@ -119,6 +132,8 @@
       <br>
       <input type="submit" value="Enviar">
     </fieldset>
+    <br>
+    <br>
     <form action="registrardatos.php" method="post">
       <fieldset>
         <legend>Escriba aquí su experiencia laboral de cara al público</legend>
@@ -128,6 +143,17 @@
         <input type="submit" value="Enviar">
       </fieldset>
     </form>
+    <br>
+    <br>
+    <form action="registrardatos.php" method="post">
+      Contrato:<br>
+      <textarea name="comentarios" rows="5" cols="60" readonly>
+    Por la presente ..............................
+    </textarea>
+      <br>
+      <input type="submit" value="Enviar">
+    </form>
+
 </body>
 
 </html>
